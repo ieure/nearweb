@@ -5,6 +5,7 @@ $(function() {
     var populatePlaces = function(err, places) {
         if (err) {
             $('#status').show().html("☹ " + err);
+            console.log(err);
             return;
         }
         $('#status').hide();
@@ -40,9 +41,9 @@ $(function() {
         if (err) {
             $('#status').show()
                 .html("☹ Sorry, I couldn't determine your location.");
+            console.log(err);
             return;
         }
-        console.log(position);
 
         if (position.coords.accuracy >= 150 && tries <= 3) {
             tries += 1;
