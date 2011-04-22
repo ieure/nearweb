@@ -1,0 +1,8 @@
+* Nearweb
+
+  This is an extremely simple webapp which will give you a list of
+  websites of places near your physical location. It uses [[http://simplegeo.com][SimpleGeo]]’s
+  [[http://simplegeo.com/producs/places/][Places product]] to locate points of interest near you, then displays
+  the ones which have an associated website.
+
+  Check it out at [[http://ieure.github.com/nearweb/][ieure.github.com/nearweb/]].
