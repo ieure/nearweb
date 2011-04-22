@@ -4,11 +4,12 @@ body
     margin: 0;
     padding: 0;
     background: white;
+    -webkit-text-size-adjust: none;
     font-family: "Helvetica", sans-serif;
     font-stretch: semi-condensed;
     letter-spacing: -0.1em;
-    font-size: 36pt;
-    line-height: 30pt;
+    font-size: 18pt;
+    line-height: 16pt;
 }
 
 a,
@@ -37,10 +38,26 @@ a
 li
 {
     border-bottom: 1px solid #ddd;
-    padding: .25em 1em;
+    padding: .25em;
 }
 
 #status
 {
     text-align: center;
+}
+
+#refresh {
+    display: none;
+    text-align: center;
+    font-size: 40pt;
+}
+
+#refresh:hover {
+    cursor: hand;
+}
+
+.disabled {
+    color: #aaa;
+    display: absolute;
+    position: left;
 }
